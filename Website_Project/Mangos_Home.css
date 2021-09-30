@@ -7,18 +7,30 @@ justify-content: center;
 .bannerContainer {
     position:relative;     
 }
-.carousel {
-    position:relative;
-    top:0;
-    width: 80%;    
-    z-index: 5;
+#carousel {
+  display: flex;
+  justify-content: center;
+  position:relative;
+  top:0;
+  height: 80%;
+  width: 80%;    
+  z-index: 5;
 }
-.carousel-inner img {       
+.myCarousel {  
+  z-index: 1;   
+}
+
+#carousel-inner img {       
    display:block;
    height: auto; 
    max-width: 100%;
    display: flex;
    justify-content: center;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .navbar {
     position:relative;
@@ -49,11 +61,25 @@ li a {
 #navbar {
     float:left;
 }
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  text-decoration: none;
+}
 li a:hover, .dropdown:hover .dropbtn {
   background-color: red;
   color: white
 }
+li a:hover:not(.active) {
+  background-color: red;
+  color: black;
+}
 
+.active {
+  background-color: red;
+}
 li.dropdown {
   display: inline-block;
 }
@@ -82,4 +108,20 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
