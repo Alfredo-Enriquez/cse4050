@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <html lang="en-US">
 <head>
   <link rel="stylesheet" href="Mangos_Home.css">
 <title>Mangos Paradise</title>
 </head>
-<ul>
-    <li id="navbar"><img src = "Mangos Front Card.jpeg" alt="Mangos Logo" style="width:11.7%;"></li>
-    <li id="navbar"><a href="Mangos_Paradise.html">Home</a></li>
-    <li id="navbar", class="dropdown">
-        <a href="Menu.html" class="dropbtn">Menu</a>
-        <div class="dropdown-content">
-          <a href="Breakfast.html">Breakfast</a>
-          <a href="Lunch.html">Lunch</a>
-          <a href="Dinner.html">Dinner</a>
-          <a href="Beverages.html">Drinks</a>
-        </div>
-    </li>
-    <li id="navbar"><a href="https://goo.gl/maps/xsJ6dtHkwP6v8G1c9">Location</a></li>
-    <li id="navbar"><a href="#about">About</a></li>
-  </ul>
+<ul class = "topnav">
+  <li class = "left">
+      <div class="logo-image">
+      <img src = "Mangos Front Card.jpeg" class="img-fluid" alt="Mangos Logo" style="width:100%;">
+      </div>
+  </li>
+  <li><a href="#about">About</a></li>
+  <li><a href="https://goo.gl/maps/z45LkE2CM6b1erc56">Location</a></li>
+  <li class="dropdown">
+      <a href="Menu.html" class="dropbtn">Menu</a>
+      <div class="dropdown-content">
+        <a href="Breakfast.html">Breakfast</a>
+        <a href="Lunch.html">Lunch</a>
+        <a href="Dinner.html">Dinner</a>
+        <a href="Beverages.html">Drinks</a>
+      </div>
+  </li>
+  <li><a href="Mangos_Paradise.html">Home</a></li>
+</ul>
   
   <div style="padding:20px;margin-top:50px;background-color:#000000;height:1200px;">
 
@@ -40,9 +44,9 @@
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+      <li style = "float:none" data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li style = "float:none" data-target="#myCarousel" data-slide-to="1" class="active"></li>
+      <li style = "float:none" data-target="#myCarousel" data-slide-to="2" class="active"></li>
     </ol>
 
     <!-- Wrapper for slides -->

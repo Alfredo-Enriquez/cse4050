@@ -26,8 +26,15 @@ justify-content: center;
   margin-left: auto;
   margin-right: auto;
 }
+.logo-image{
+  width: 123px;
+  height: auto;
+  overflow: hidden;
+  top: 0;
 
-ul {
+}
+/*Topnav*/
+ul.topnav {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -37,16 +44,25 @@ ul {
   width: 100%;
   z-index: 99;
 }
+ul.topnav li.left{
+  float: left;
+}
+
+ul.topnav li {
+  float: right;
+}
 
 li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 25px 25px 25px 25px;
+  padding: 25px;
   text-decoration: none;
 }
-#navbar {
-    float:left;
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
 }
 li a, .dropbtn {
   display: inline-block;
