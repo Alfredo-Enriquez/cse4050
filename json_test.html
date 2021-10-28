@@ -1,0 +1,23 @@
+<p>
+    This is a file with a script element.
+</p>
+
+<script>
+    //o1 to s1
+    const o1 = {
+        x: 54,
+        y: 102,
+        z: 23
+    };
+    const s1 = JSON.stringify(o1);
+
+    console.log(s1);
+
+    //s2 to o2
+    const s2 = '{"a": 55,"b": 79,"c": 5}';
+    const o2 = JSON.parse(s2);
+
+    console.log(o2);
+    console.log(o2.b);
+
+</script>
