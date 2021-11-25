@@ -27,28 +27,29 @@ justify-content: center;
   margin-right: auto;
 }
 .logo-image{
-  width: 123px;
+  width: 120px;
   height: auto;
   overflow: hidden;
   top: 0;
 
 }
 /*Topnav*/
-ul.topnav {
+ul.topnavigation {
   list-style-type: none;
   margin: 0;
   padding: 0;
   background-color: #333;
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
-  z-index: 99;
+  z-index: 50;
 }
-ul.topnav li.left{
+ul.topnavigation li.left{
   float: left;
+  padding:0px;
 }
 
-ul.topnav li {
+ul.topnavigation li {
   float: right;
 }
 
@@ -56,13 +57,14 @@ li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 25px;
+  padding: 15px;
   text-decoration: none;
+  z-index: 75;
 }
 
 @media screen and (max-width: 600px) {
-  ul.topnav li.right, 
-  ul.topnav li {float: none;}
+  ul.topnavigation li.right, 
+  ul.topnavigation li {float: none;}
 }
 li a, .dropbtn {
   display: inline-block;
@@ -70,10 +72,12 @@ li a, .dropbtn {
   text-align: center;
   padding: 25px;
   text-decoration: none;
+  z-index: 75;
 }
-li a:hover, .dropdown:hover .dropbtn {
+li a:hover, .dropdownmenu:hover .dropbtn {
   background-color: red;
-  color: white
+  color: white;
+  z-index: 75;
 }
 li a:hover:not(.active) {
   background-color: red;
@@ -83,20 +87,20 @@ li a:hover:not(.active) {
 .active {
   background-color: red;
 }
-li.dropdown {
+li.dropdownmenu {
   display: inline-block;
 }
 
-.dropdown-content {
+.dropdownmenu-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 75;
 }
 
-.dropdown-content a {
+.dropdownmenu-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -104,12 +108,13 @@ li.dropdown {
   text-align: left;
 }
 
-.dropdown-content a:hover {
+.dropdownmenu-content a:hover {
     background-color: #f1f1f1;
     color: black;
+    z-index: 75;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdownmenu:hover .dropdownmenu-content {
   display: block;
 }
 * {
@@ -133,13 +138,8 @@ li.dropdown {
   text-align: center;
 }
 
-#social #socialContainer ul {
-  float: left;
-}
-
 #social #socialContainer ul li {
-  float: left;
-  padding-left: 10px;
+  padding-left: 15px;
   list-style-type: none;
 }
 /* Clearfix (clear floats) */
@@ -152,7 +152,7 @@ li.dropdown {
   content: "";
   clear: both;
 }
-.fa {
+li.fa {
   text-align: center;
   text-decoration: none;
   margin: auto;
