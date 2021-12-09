@@ -141,6 +141,10 @@ body{
   background-image: url('Background.png');
 }
 /* Socials */
+img {
+  max-width: 100%;
+}
+
 #social #socialContainer {
   text-align: center;
   display: inline-block;
