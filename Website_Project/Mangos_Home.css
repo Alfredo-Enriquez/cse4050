@@ -78,10 +78,12 @@ li a:hover, .dropdownmenu:hover .dropbtn {
   background-color: red;
   color: white;
   z-index: 75;
+  text-decoration: none;
 }
 li a:hover:not(.active) {
   background-color: red;
   color: black;
+  text-decoration: none;
 }
 
 .active {
@@ -133,35 +135,40 @@ li.dropdownmenu {
   margin-right: auto;
   justify-content: center;
 }
+
+/* Background */
+body{
+  background-image: url('Background.png');
+}
 /* Socials */
 #social #socialContainer {
   text-align: center;
+  display: inline-block;
+}
+#social #socialContainer2 {
+  text-align: center;
+  display: inline-block;
+  margin-left: 34%;
 }
 
 #social #socialContainer ul li {
   padding-left: 15px;
   list-style-type: none;
 }
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+#page-container {
+  position: relative;
+  min-height: 10vh;
 }
-.socialRow::after {
-  content: "";
-  clear: both;
+
+#content-wrap {
+  padding-bottom: 1rem;    /* Footer height */
 }
-li.fa {
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 92%;
+  height: 3rem;            /* Footer height */
   text-align: center;
-  text-decoration: none;
-  margin: auto;
-  border-radius: 50%;
-}
-.fa:hover {
-  opacity: 0.7;
-}
-.fa-instagram {
-  background: #125688;
-  color: white;
+  margin-top: 10%;
 }

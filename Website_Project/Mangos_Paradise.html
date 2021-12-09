@@ -2,11 +2,10 @@
 
 <html lang="en-US">
   <head>
-    <title>Mangos Paradise</title>
+    <title>Mangos Paradise</title> <!-- Stylesheets and scripts used for website -->
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Help structure when viewing on smaller screen/device -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -18,23 +17,23 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
-<ul class = "topnavigation navbar navbar-expand-md  navbar-dark">
+<ul class = "topnavigation navbar navbar-expand-md  navbar-dark"> <!-- Navigation bar at the top of website -->
   <li class = "left" href = "Mangos_Paradise.html">
     <div class="logo-image">
-    <img src = "Mangos Front Card.jpeg" class="img-fluid" alt="Mangos Logo" style="width:110%;">
+    <img src = "Mangos Front Card.jpeg" class="img-fluid" alt="Mangos Logo" style="width:110%;"> <!-- Image on top left of website -->
     </div>
   </li>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <div class="collapse navbar-collapse" id="collapsibleNavbar"> <!-- Right side of navigation bar -->
       <li>
-        <a  href="#">About</a>
+        <a  href="About.html">About</a>
       </li>
       <li>
-        <a href="https://goo.gl/maps/z45LkE2CM6b1erc56">Location</a>
+        <a href="https://goo.gl/maps/z45LkE2CM6b1erc56">Location</a> <!-- Linked to google maps -->
       </li>
-      <li class="dropdownmenu">
+      <li class="dropdownmenu"> <!-- Drop down menu for menu categories -->
         <a href="Menu.html" class="dropbtn">Menu</a>
         <div class="dropdownmenu-content">
           <a href="Breakfast.html">Breakfast</a>
@@ -48,14 +47,12 @@
       </li>
   </div>
 </ul>
-  
-  <div style="padding:20px;margin-top:50px;background-color:#000000;height:1200px;">
 
 <body>
-
-<div class="container carousel">
+  <div style="padding:20px;margin-top:50px;" id="page-container">
+<div class="container carousel" id="content-wrap">
   <h2>
-      <picture><img src = "Mangos Front Card.jpeg" alt="Mangos Logo" style="width:30%;", class="center"></picture>
+      <picture><img src = "Mangos Front Card.jpeg" alt="Mangos Logo" style="width:30%;", class="center"></picture> <!-- Picture top middle -->
   </h2>  
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -104,29 +101,33 @@
   </div>
 </div>
 
-<div id="social">
-  <div id="socialContainer">
-     <ul>
-        <li>
-           <a class="Icons" href="https://www.instagram.com/mangos_paradise_restaurant/?hl=en" title="Instagram" target="_blank">
-            <picture><img src="Instagram_Icon.svg" style="width:8%"></picture>
-           </a>
-        </li>
 
-        <li>
-           <a class="Icons" href="url" title="Tiktok" target="_blank">
-            <picture><img src="Tiktok_Icon.svg" style="width:75%"></picture>
-           </a>
-        </li>
-
-        <li>
-           <a class="Icons" href="https://www.yelp.com/biz/mangos-paradise-rialto" title="Yelp" target="_blank">
-            <picture><img src="Yelp_Icon.svg" style="width: 200%"></picture>
-           </a>
-        </li>
-     </ul>
+<footer id = "footer"> 
+  <div id="social"> <!-- Social Media buttons at bottom of website -->
+    <div id="socialContainer">
+       <ul>
+          <li>
+             <a class="Icons" href="https://www.instagram.com/mangos_paradise_restaurant/?hl=en" title="Instagram" target="_blank">
+              <picture><img src="Instagram_Icon.svg" style="width: 60px; height: 60px;"></picture>
+  
+              <a class="Icons" href="https://www.tiktok.com/@mangos_paradise?is_copy_url=1&is_from_webapp=v1" title="Tiktok" target="_blank">
+                <picture><img src="Tiktok_Icon.svg" style="width: 60px; height: 60px;"></picture>
+               </a>
+  
+               <a class="Icons" href="https://www.yelp.com/biz/mangos-paradise-rialto" title="Yelp" target="_blank">
+                <picture><img src="Yelp_Icon.svg" style="width: 60px; height: 60px;"></picture>
+               </a>
+             </a>
+          </li>
+          <li>
+            Copyrights © Mangos Paradise Restaurant Inc. 2021.
+          </li>
+          <li>
+            By Alfredo Enriquez
+          </li>
+       </ul>
+    </div>
   </div>
-</div>
-
+</footer>
 </body>
 </html>
